@@ -7,14 +7,65 @@
 
 body {
     background-color: var(--white);
+    background-color: var(--black);
+    margin: 0;
     color: var(--dark-grey);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.portrait {
+/* Hero */
+
+header {
+    background-color: var(--white);
+    height: 30rem;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+
+.portrait > img {
     border-radius: 50%;
-    float: left;
+    width: 400px;
 }
 
-.container {
-    margin: 2rem;
+#name {
+    font-size: 4rem;
+    color: var(--teal);
+    font-family: 'Roboto Slab', serif;
+}
+
+#tagline {
+    font-size: 1.5rem;
+}
+
+/* Resume */
+
+.resume {
+    margin-top: 2rem;
+    height: 30rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    background-color: green;
+    justify-items: center; 
+    align-items: center; 
+}
+
+.resume-item {
+    width: 75%;
+    height: 75%;
+    background-color: blue;
+}
+
+.resume-item > .content {
+
+}
+
+.resume-item > h2 {
+    text-align: center;
 }
