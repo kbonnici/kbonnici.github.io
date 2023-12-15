@@ -115,14 +115,14 @@ hr {
     justify-content: space-around;
     width: 50%;
     gap: 15px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .social-link {
     display: flex;
     align-items: center;
     gap: 10px;
-    justify-content: center;
-    height: 4rem;
     text-wrap: nowrap;
 }
 
@@ -200,6 +200,16 @@ a:active {
         margin: auto auto 10px auto;
         text-align: center;
     }
+
+    .flex-container p {
+        margin-left: 20%;
+        flex-basis: 25%;
+    }
+    
+    .socials {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }    
 
 @media only screen and (max-width: 800px) {
@@ -219,10 +229,6 @@ a:active {
         font-size: 1.5rem;
     }
     
-    .resume-item p {
-        margin-left: 20%;
-        flex-basis: 25%;
-    }
     
     .socials {
         gap: 25px;
@@ -264,5 +270,30 @@ a:active {
     #tagline {
         font-size: 1em;
         margin-top: 0;
+    }
+    
+    .hobbies p{
+        font-size: 1em;
+        text-wrap: nowrap;
+    }
+    
+    .socials {
+        flex-direction: column;
+        align-items: start;
+        justify-content: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        gap: 0;
+    }
+
+    .social-link {
+       margin-left: 20%;
+    }
+    .social-link svg {
+        width: 20px;
+    }
+    
+    .social-link a {
+        font-size: 1em;
     }
 }
