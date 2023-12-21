@@ -106,6 +106,7 @@ hr {
 
 .skills > p {
     text-wrap: nowrap;
+    font-size: large;
 }
 
 .hobbies > p {
@@ -282,6 +283,10 @@ a:active {
     #tagline {
         font-size: 1em;
         margin-top: 0;
+    }
+    
+    .skills p {
+        font-size: 1em;
     }
     
     .hobbies p{
