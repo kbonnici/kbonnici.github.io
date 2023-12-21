@@ -3,13 +3,15 @@
     --dark-grey: #393E46;
     --teal: #00ADB5;
     --white: #EEEEEE;
+    --background: #DDD;
 }
 
 
 
 body {
-    background-color: var(--white);
+    /* background-color: var(--white); */
     /* background-color: var(--black); */
+    background-color: var(--background);
     margin: 0;
     color: var(--black);
     font-family: Arial, Helvetica, sans-serif;
@@ -19,6 +21,8 @@ body {
 
 header {
     height: 30rem;
+    background-color: #fff;
+    padding-bottom: 2rem;
 }
 
 .hero {
@@ -53,7 +57,6 @@ header {
 /* Resume */
 
 .resume {
-    margin-top: 2rem;
     height: 40rem;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -114,7 +117,7 @@ hr {
 .contact {
     display: flex;
     justify-content: center;
-    background-color: #DDD;
+    background-color: var(--background);
 }
 
 .socials {
