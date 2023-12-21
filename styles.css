@@ -102,6 +102,7 @@ hr {
 }
 
 .skills > p {
+    text-wrap: nowrap;
 }
 
 .hobbies > p {
@@ -173,19 +174,14 @@ a:active {
     }
     
     .layout-container {
-        justify-content: flex-start;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        text-wrap: wrap;
         gap: 10px;
         width: 75%;
     }
     
     .layout-container > p {
-        flex-grow: 0;
-        flex-shrink: 0;
-        flex-basis: 2;
-        /* text-wrap: nowrap; */
+        margin-left: 20%;
     }
     
     .resume {
@@ -219,12 +215,6 @@ a:active {
         text-align: center;
     }
 
-    .layout-container p {
-        margin-left: 20%;
-        flex-basis: 25%;
-        /* width: 50%; */
-    }
-    
     .socials {
         padding-top: 10px;
         padding-bottom: 10px;
