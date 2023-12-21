@@ -5,8 +5,10 @@
     --white: #EEEEEE;
 }
 
+
+
 body {
-    /* background-color: var(--white); */
+    background-color: var(--white);
     /* background-color: var(--black); */
     margin: 0;
     color: var(--black);
@@ -88,20 +90,24 @@ hr {
     margin-left: 0;
 }
 
-.flex-container {
+.layout-container {
     display: flex;
     flex-wrap: wrap;
-    width: 85%;
+    width: 95%;
 }
 
-.flex-container > p {
+.layout-container > p {
     margin-top: 0;
     width: 33.3%;
+}
+
+.skills > p {
 }
 
 .hobbies > p {
     width: 50%;
     font-size: large;
+    text-wrap: nowrap;
 }
 
 .contact {
@@ -166,8 +172,20 @@ a:active {
         width: 85%;
     }
     
-    .flex-container > p {
-        flex-basis: 50%;
+    .layout-container {
+        justify-content: flex-start;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        text-wrap: wrap;
+        gap: 10px;
+        width: 75%;
+    }
+    
+    .layout-container > p {
+        flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 2;
+        /* text-wrap: nowrap; */
     }
     
     .resume {
@@ -201,9 +219,10 @@ a:active {
         text-align: center;
     }
 
-    .flex-container p {
+    .layout-container p {
         margin-left: 20%;
         flex-basis: 25%;
+        /* width: 50%; */
     }
     
     .socials {
