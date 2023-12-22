@@ -184,10 +184,6 @@ a:active {
         width: 75%;
     }
     
-    .layout-container > p {
-        margin-left: 20%;
-    }
-    
     .resume {
         grid-template-columns: 1fr;
         height: auto;
@@ -219,6 +215,11 @@ a:active {
         text-align: center;
     }
 
+    .skills p, .hobbies p {
+        width: 100%;
+        text-align: center;
+    }
+
     .socials {
         padding-top: 10px;
         padding-bottom: 10px;
@@ -241,6 +242,7 @@ a:active {
     .intro {
         font-size: 1.5rem;
     }
+    
     
     
     .socials {
@@ -287,30 +289,22 @@ a:active {
     
     .skills p {
         font-size: 1em;
+        text-wrap: wrap;
     }
     
     .hobbies p{
         font-size: 1em;
         text-wrap: nowrap;
+        width: 100%;
+        text-align: center;
     }
     
     .socials {
         flex-direction: column;
-        align-items: start;
-        justify-content: center;
+        align-items: center;
         padding-top: 5px;
         padding-bottom: 5px;
         gap: 0;
     }
 
-    .social-link {
-       margin-left: 20%;
-    }
-    .social-link svg {
-        width: 20px;
-    }
-    
-    .social-link a {
-        font-size: 1em;
-    }
 }
